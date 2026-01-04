@@ -11,4 +11,6 @@ Route::post('/post', [BlogController::class, 'store']);
 Route::get('/post/{id}/edit', [BlogController::class, 'edit']);
 Route::put('/post/{id}', [BlogController::class, 'update']);
 Route::delete('/post/{id}', [BlogController::class, 'destroy']);
+Route::get('/menu', [BlogController::class, 'menu']);
+
 

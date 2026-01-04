@@ -8,7 +8,7 @@ use Illuminate\Http\Request;
 class BlogController extends Controller
 {
 
-    public function home()
+    public function menu()
     {
         $search = request()->query('search');
         $query = Post::query();
@@ -24,7 +24,7 @@ class BlogController extends Controller
         $posts = $query->latest()->paginate(10);
         $posts->appends(['search' => $search]);
         $totalposts = Post::count();
-        return view('home', compact('posts', 'totalposts', 'search'));
+        return view('menu', compact('posts', 'totalposts', 'search'));
     }
 
     // single kalo diklik satu2
@@ -42,6 +42,14 @@ class BlogController extends Controller
 
         return view('about', compact('info'));
     }
+
+    public function home()
+    {
+        $info = Post::aboutInfo();
+
+        return view('home', compact('info'));
+    }
+
 
     public function create()
     {

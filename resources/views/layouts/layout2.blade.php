@@ -17,16 +17,10 @@
     <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
       <ul class="navbar-nav gap-4">
         <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="/menu">menu</a>
+        </li>
+        <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="/about">about</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Features</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Pricing</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled" aria-disabled="true">Disabled</a>
         </li>
       </ul>
     </div>
