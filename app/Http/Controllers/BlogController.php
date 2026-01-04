@@ -18,10 +18,10 @@ class BlogController extends Controller
                 $antri->where('title', 'like', "%{$search}%")
                       ->orWhere('content', 'like', "%{$search}%");
             });
-             
+
         }
 
-        $posts = $query->latest()->paginate(5);
+        $posts = $query->latest()->paginate(10);
         $posts->appends(['search' => $search]);
         $totalposts = Post::count();
         return view('home', compact('posts', 'totalposts', 'search'));
@@ -48,23 +48,30 @@ class BlogController extends Controller
         return view('create');
     }
 
-    public function store(Request $request)
-    {
-        // Validasi input
-        $validated = $request->validate([
-            'title' => 'required|max:255',
-            'content' => 'required',
-        ]);
+  public function store(Request $request)
+{
+    $request->validate([
+        'title' => 'required',
+        'content' => 'required',
+        'image' => 'nullable|image|mimes:jpg,jpeg,png',
+        'excerpt' => 'nullable|max:255'
+    ]);
 
-        // Simpan database
-        Post::create([
-            'title' => $request->title,
-            'content' => $request->content,
-        ]);
+    $imagePath = null;
 
-        // redirek trs suskes
-        return redirect('/')->with('success', 'Post berhasil ditambahkan!');
+    if ($request->hasFile('image')) {
+        $imagePath = $request->file('image')->store('posts', 'public');
     }
+
+    Post::create([
+        'title' => $request->title,
+        'content' => $request->content,
+        'excerpt' => $request->excerpt,
+        'image' => $imagePath
+    ]);
+
+    return redirect('/')->with('success', 'Post berhasil ditambahkan');
+}
 
     // UPDATE form
     public function edit($id)

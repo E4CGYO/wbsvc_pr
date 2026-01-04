@@ -33,7 +33,7 @@
   </div>
 </nav>
     {{-- navbar end --}}
-    
+
     {{-- content here --}}
     @yield('content')
 
