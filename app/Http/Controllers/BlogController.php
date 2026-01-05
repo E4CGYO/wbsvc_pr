@@ -56,6 +56,8 @@ class BlogController extends Controller
         return view('create');
     }
 
+
+
   public function store(Request $request)
 {
     $request->validate([
@@ -116,6 +118,6 @@ class BlogController extends Controller
         $post->delete();
 
         // Redirect delete berhasil
-        return redirect('/')->with('success', 'Post berhasil dihapus!');
+        return redirect('/menu')->with('success', 'Post berhasil dihapus!');
     }
 }
