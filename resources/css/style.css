@@ -1,0 +1,323 @@
+.dashbooard {
+  background-color: #ffffff;
+  width: 100%;
+  min-width: 908px;
+  min-height: 2792px;
+  position: relative;
+}
+
+.dashbooard .rectangle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 908px;
+  height: 65px;
+  background-color: #ffffff;
+}
+
+.dashbooard .text-wrapper {
+  position: absolute;
+  top: 18px;
+  left: 370px;
+  font-family: "Poppins-Regular", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.dashbooard .div {
+  position: absolute;
+  top: 18px;
+  left: 495px;
+  font-family: "Poppins-Regular", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.dashbooard .text-wrapper-2 {
+  position: absolute;
+  top: 18px;
+  left: 616px;
+  font-family: "Poppins-Regular", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.dashbooard .text-wrapper-3 {
+  position: absolute;
+  top: 10px;
+  left: 38px;
+  font-family: "Poppins-Bold", Helvetica;
+  font-weight: 700;
+  color: #000000;
+  font-size: 30px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.dashbooard .group {
+  top: 11px;
+  left: 741px;
+  position: absolute;
+  width: 126px;
+  height: 42px;
+}
+
+.dashbooard .rectangle-2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 124px;
+  height: 42px;
+  background-color: #f8b7b7;
+  border-radius: 10px;
+}
+
+.dashbooard .text-wrapper-4 {
+  position: absolute;
+  top: 6px;
+  left: 22px;
+  font-family: "Poppins-Regular", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.dashbooard .images {
+  position: absolute;
+  top: 79px;
+  left: 0;
+  width: 908px;
+  height: 378px;
+  aspect-ratio: 2.4;
+  object-fit: cover;
+}
+
+.dashbooard .text-wrapper-5 {
+  position: absolute;
+  top: 200px;
+  left: 61px;
+  font-family: "Poppins-Regular", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.dashbooard .the-best-cooking {
+  position: absolute;
+  top: 488px;
+  left: 60px;
+  font-family: "Poppins-Bold", Helvetica;
+  font-weight: 700;
+  color: #000000;
+  font-size: 20px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.dashbooard .p {
+  position: absolute;
+  top: 798px;
+  left: 689px;
+  font-family: "Poppins-Bold", Helvetica;
+  font-weight: 700;
+  color: #000000;
+  font-size: 20px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.dashbooard .if-you-re-looking {
+  position: absolute;
+  top: 564px;
+  left: 60px;
+  width: 473px;
+  font-family: "Poppins-Regular", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 15px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.dashbooard .if-you-re-looking-2 {
+  position: absolute;
+  top: 875px;
+  left: 393px;
+  width: 473px;
+  font-family: "Poppins-Regular", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 15px;
+  text-align: right;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.dashbooard .group-2 {
+  top: 273px;
+  left: 61px;
+  position: absolute;
+  width: 126px;
+  height: 42px;
+}
+
+.dashbooard .text-wrapper-6 {
+  position: absolute;
+  top: 4px;
+  left: 14px;
+  font-family: "Poppins-Regular", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.dashbooard .group-3 {
+  top: 702px;
+  left: 60px;
+  position: absolute;
+  width: 126px;
+  height: 42px;
+}
+
+.dashbooard .group-4 {
+  top: 1007px;
+  left: 742px;
+  position: absolute;
+  width: 126px;
+  height: 42px;
+}
+
+.dashbooard .ellipse {
+  top: 541px;
+  left: 646px;
+  position: absolute;
+  width: 161px;
+  height: 161px;
+}
+
+.dashbooard .img {
+  top: 852px;
+  left: 104px;
+  position: absolute;
+  width: 161px;
+  height: 161px;
+}
+
+.dashbooard .rectangle-3 {
+  position: absolute;
+  top: 1103px;
+  left: 60px;
+  width: 152px;
+  height: 210px;
+  object-fit: cover;
+}
+
+.dashbooard .rectangle-4 {
+  position: absolute;
+  top: 1107px;
+  left: 271px;
+  width: 147px;
+  height: 210px;
+  object-fit: cover;
+}
+
+.dashbooard .rectangle-5 {
+  position: absolute;
+  top: 1108px;
+  left: 493px;
+  width: 147px;
+  height: 210px;
+}
+
+.dashbooard .rectangle-6 {
+  position: absolute;
+  top: 1374px;
+  left: 271px;
+  width: 147px;
+  height: 210px;
+}
+
+.dashbooard .rectangle-7 {
+  position: absolute;
+  top: 1375px;
+  left: 493px;
+  width: 147px;
+  height: 210px;
+}
+
+.dashbooard .rectangle-8 {
+  position: absolute;
+  top: 1107px;
+  left: 709px;
+  width: 147px;
+  height: 210px;
+}
+
+.dashbooard .rectangle-9 {
+  position: absolute;
+  top: 1369px;
+  left: 60px;
+  width: 147px;
+  height: 210px;
+  object-fit: cover;
+}
+
+.dashbooard .rectangle-10 {
+  position: absolute;
+  top: 1373px;
+  left: 709px;
+  width: 147px;
+  height: 210px;
+}
+
+.dashbooard .rectangle-11 {
+  position: absolute;
+  top: 1638px;
+  left: 271px;
+  width: 147px;
+  height: 210px;
+  object-fit: cover;
+}
+
+.dashbooard .rectangle-12 {
+  position: absolute;
+  top: 1639px;
+  left: 493px;
+  width: 147px;
+  height: 210px;
+  object-fit: cover;
+}
+
+.dashbooard .rectangle-13 {
+  position: absolute;
+  top: 1632px;
+  left: 60px;
+  width: 147px;
+  height: 210px;
+}
+
+.dashbooard .rectangle-14 {
+  position: absolute;
+  top: 1636px;
+  left: 709px;
+  width: 147px;
+  height: 210px;
+  object-fit: cover;
+}

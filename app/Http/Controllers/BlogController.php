@@ -5,6 +5,9 @@ namespace App\Http\Controllers;
 use App\Models\Post;
 use Illuminate\Http\Request;
 
+use Illuminate\Support\Facades\File;
+
+
 class BlogController extends Controller
 {
 
@@ -44,11 +47,17 @@ class BlogController extends Controller
     }
 
     public function home()
-    {
-        $info = Post::aboutInfo();
+{
+    $info = Post::aboutInfo();
 
-        return view('home', compact('info'));
-    }
+    $images = collect(File::files(public_path('images')))
+        ->filter(function ($file) {
+            return str_starts_with($file->getFilename(), 'masak');
+        });
+
+    return view('home', compact('info', 'images'));
+}
+
 
 
     public function create()

@@ -7,6 +7,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js" integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y" crossorigin="anonymous"></script>
 </head>
 <body>
+<<<<<<< Updated upstream
     {{-- navbar start --}}
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
   <div class="container-fluid d-flex justify-content-center">
@@ -27,6 +28,39 @@
   </div>
 </nav>
     {{-- navbar end --}}
+=======
+  {{-- navbar start --}}
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+        <a class="navbar-brand fw-bold" style="color:#980404;">
+            GEDA GEDI COOKING
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNav" aria-controls="navbarNav"
+                aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <!-- TENGAH -->
+            <ul class="navbar-nav mx-auto text-center">
+                <li class="nav-item">
+                    <a class="nav-link active" href="/" style="font-weight: bolder; color:#376BE6;">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/menu" style="font-weight: bolder; color:#376BE6;">Menu</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/about" style="font-weight: bolder; color:#376BE6;">About</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+{{-- navbar end --}}
+
+>>>>>>> Stashed changes
 
     {{-- content here --}}
     @yield('content')

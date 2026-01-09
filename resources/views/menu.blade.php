@@ -21,6 +21,7 @@
                placeholder="Cari post...">
         <button type="submit">Cari</button>
 
+<<<<<<< Updated upstream
         @if ($search ?? false)
             <a href="/">clear</a>
         @endif
@@ -88,9 +89,44 @@
                         </div>
                     </div>
 
+=======
+    <div class="container-fluid py-5" style="background:#FFE6C9;">
+
+    @foreach($posts as $index => $post)
+
+        <div class="container mb-5">
+            <div class="row align-items-center">
+
+                {{-- TEKS --}}
+                <div class="col-md-6 {{ $index % 2 == 0 ? '' : 'order-md-2' }}">
+                    <h2 class="fw-bold">
+                        {{ $post->title }}
+                    </h2>
+
+                    <p class="text-muted mt-3">
+                        {{ $post->excerpt ?? Str::limit(strip_tags($post->content), 150) }}
+                    </p>
+
+                    <a href="{{ route('post.show', $post->id) }}"
+                       class="btn btn-danger rounded-pill px-4 mt-3">
+                        Resep
+                    </a>
+                </div>
+
+                {{-- GAMBAR --}}
+                <div class="col-md-6 text-center {{ $index % 2 == 0 ? '' : 'order-md-1' }}">
+                    @if($post->image)
+                        <img src="{{ asset('storage/' . $post->image) }}"
+                             class="img-fluid hero-img">
+                    @else
+                        <img src="/images/default.jpg"
+                             class="img-fluid hero-img">
+                    @endif
+>>>>>>> Stashed changes
                 </div>
             @endforeach
 
+<<<<<<< Updated upstream
         </div>
 
         {{-- Pagination --}}
@@ -102,8 +138,13 @@
                 hingga {{ $posts->lastItem() }}
                 dari total {{ $totalposts }} post
             </p>
+=======
+            </div>
+>>>>>>> Stashed changes
         </div>
 
-    </div>
+    @endforeach
+
+</div>
 
 @endsection

@@ -3,6 +3,15 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\BlogController;
 
+<<<<<<< Updated upstream
+=======
+
+/*
+|--------------------------------------------------------------------------
+| HOME
+|--------------------------------------------------------------------------
+*/
+>>>>>>> Stashed changes
 Route::get('/', [BlogController::class, 'home']);
 Route::get('/post/create', [BlogController::class, 'create']);
 Route::get('/post/{id}', [BlogController::class, 'show']);
