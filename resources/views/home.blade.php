@@ -3,12 +3,6 @@
 @section('title', 'Home')
 
 @section('content')
-<<<<<<< Updated upstream
-    <h1>ini adalah halaman home</h1>
-
-
-    
-=======
 
 <!-- ===== CAROUSEL ===== -->
 <div class="container my-4">
@@ -47,7 +41,7 @@
         </div>
 
         <div class="col-md-6 text-center">
-            <img src="/images/masak2.jpg" class="img-fluid rounded-circle shadow" width="260">
+            <img src="/images/masak3.jpg" class="img-fluid rounded-circle shadow" width="260">
         </div>
     </div>
 </div>
@@ -86,5 +80,4 @@
 
 </div>
 
->>>>>>> Stashed changes
 @endsection
