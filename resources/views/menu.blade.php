@@ -1,12 +1,10 @@
 @extends('layouts.layout2')
-
-@section('mnu', 'Blog Home')
-
+@section('title', 'Menu Resep')
 @section('content')
 
-@if (session('success'))
+<!-- @if (session('success'))
     <p><strong>{{ session('success') }}</strong></p>
-@endif
+@endif -->
 
 
 <!-- <hr>
@@ -42,7 +40,7 @@
                 <div class="row g-0">
                 {{-- FOTO (Kiri) --}}
                 <div class="col-md-4">
-                    <img src="{{ asset('storage/' . $img->image) }}" class="img-fluid rounded-start" alt="{{ $img['nama'] }}" style="object-fit: cover; width: 100%; height: 200px;">
+                    <img src="{{ asset('images/' . $img->image) }}" class="img-fluid rounded-start" alt="{{ $img['nama'] }}" style="object-fit: cover; width: 100%; height: 200px;">
                 </div>
                 {{-- KONTEN (Kanan) --}}
                 <div class="col-md-8">

@@ -5,7 +5,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>INDOCHEF</title>
+    <title>GDA GDI COOKING</title>
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -56,19 +56,7 @@
 
         <!-- Brand + Menu di KIRI -->
         <div class="d-flex align-items-center">
-            <a class="navbar-brand fw-bold me-4" href="/">GDA GDI COOK</a>
-
-            <ul class="navbar-nav flex-row gap-3">
-                <li class="nav-item">
-                    <a class="nav-link active fw-bold" href="/">Home</a>
-                </li>
-                <li class="nav-item fw-bold">
-                    <a class="nav-link" href="/menu">Menu</a>
-                </li>
-                <li class="nav-item fw-bold">
-                    <a class="nav-link" href="/about">About</a>
-                </li>
-            </ul>
+            
         </div>
 
         <!-- Toggle Mobile -->
