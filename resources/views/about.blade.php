@@ -7,12 +7,19 @@
     {{-- <h1>saya dalah</h1>
     <p><strong>Nama:</strong> {{ $info['name'] }}</p>
     <p><strong>Bio:</strong> {{ $info['bio'] }}</p>
-    
+
     <a href="/">← Back to Home</a> --}}
 {{-- bagian ini di hapus engk rojib --}}
 
 {{-- Bagian saya tinggal satu halaman yaitu Halam untuk booking kelas memasak. Nanti di halaman itu ada penjelasan tentang kelas memasak kita  --}}
-    <div class="container-fluid" style="margin-top: 50px; margin-bottom: 50px; padding-left: 0; padding-right: 0;">
+
+<div class="container-fluid py-5">
+
+    <div class="d-flex justify-content-between align-items-center mb-4 mt-4" >
+        <h2 class="mb-0">tentang</h2>
+    </div>
+
+    <div class="container-fluid py-4" style="margin-top: 150px; margin-bottom: 50px; padding-left: 0; padding-right: 0;">
 
         <div class="row align-items-center">
             <div class="col-md-6">
@@ -31,5 +38,5 @@
             </div>
         </div>
     </div>
-    
+
 @endsection

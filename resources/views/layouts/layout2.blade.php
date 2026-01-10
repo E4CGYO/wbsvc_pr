@@ -5,20 +5,34 @@
   <title>@yield('title')</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
   <style>
+    /* Navbar overlay di atas carousel */
+        .navbar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1050;
+            transition: background-color 0.3s ease;
+        }
+
+        /* Navbar transparan di awal */
+        .navbar-transparent {
+            background-color: transparent;
+        }
+
+        /* Navbar saat scroll */
+        .navbar.scrolled {
+            background-color: rgba(0, 0, 0, 0.85);
+        }
     /* Carousel image sizing: consistent height and cover crop */
     body {
-      background-color: bisque;
+      background-color: gray;
       background-size: cover;
       background-repeat: no-repeat;
       background-position: center;
       background-attachment: fixed;
     }
 
-    .carousel-item img {
-      width: 100%;
-      height: 420px;
-      object-fit: cover;
-    }
+
 
     @media (max-width: 576px) {
       .carousel-item img {
@@ -31,32 +45,40 @@
 </head>
 
 <body>
-  {{-- navbar start --}}
-  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark navbar-transparent">
     <div class="container-fluid">
-      <a class="navbar-brand">INDOCHEF</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="/" style="Color: #376BE6;">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/menu" style="Color: #376BE6;">Menu</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/about" style="Color: #376BE6;">About</a>
-          </li>
-        </ul>
-      </div>
+
+        <!-- Brand + Menu di KIRI -->
+        <div class="d-flex align-items-center">
+            <a class="navbar-brand fw-bold me-4" href="/">GDA GDI COOK</a>
+
+            <ul class="navbar-nav flex-row gap-3">
+                <li class="nav-item">
+                    <a class="nav-link active fw-bold" href="/">Home</a>
+                </li>
+                <li class="nav-item fw-bold">
+                    <a class="nav-link" href="/menu">Menu</a>
+                </li>
+                <li class="nav-item fw-bold">
+                    <a class="nav-link" href="/about">About</a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Toggle Mobile -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarMobile">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+
     </div>
-  </nav>
+</nav>
   {{-- navbar end --}}
 
   {{-- content here --}}
-  @yield('content')
+  <!-- @yield('content') -->
 
   {{-- footer --}}
   <footer class="text-center text-lg-start bg-body-tertiary text-muted">
