@@ -13,7 +13,7 @@
 
 {{-- Bagian saya tinggal satu halaman yaitu Halam untuk booking kelas memasak. Nanti di halaman itu ada penjelasan tentang kelas memasak kita  --}}
 
-<div class="container-fluid py-4">
+    <div class="container-fluid py-8">
 
     <div class="d-flex justify-content-between align-items-center mb-4 mt-4" >
         <h2 class="mb-0">tentang</h2>

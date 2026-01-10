@@ -51,7 +51,7 @@
 
         <!-- Brand + Menu di KIRI -->
         <div class="d-flex align-items-center">
-            <a class="navbar-brand fw-bold me-4" href="/">GDA GDI COOK</a>
+            <a class="navbar-brand fw-bold me-4" href="/">GDA GDI COOKING</a>
 
             <ul class="navbar-nav flex-row gap-3">
                 <li class="nav-item">
