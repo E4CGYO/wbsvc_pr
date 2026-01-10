@@ -1,6 +1,6 @@
 @extends('layouts.layout2')
 
-@section('title', 'Blog Home')
+@section('mnu', 'Blog Home')
 
 @section('content')
 
@@ -28,75 +28,77 @@
 
     <div class="d-flex justify-content-between align-items-center mb-4">
         <h2 class="mb-0">Menu Resep</h2>
-        <a href="/post/create" class="btn btn-primary">
-            + Tambah Post Baru
-        </a>
+
     </div>
 
-    <div class="row g-4">
+<div class="container mt-4">
+    <div class="row">
 
-        @foreach($posts as $post)
-            <div class="col-md-4 col-lg-3">
-
-                <div class="card h-100 shadow-sm">
-
-                    {{-- Gambar --}}
-                    @if($post->image)
-                        <img src="{{ asset('storage/' . $post->image) }}"
-                             class="card-img-top"
-                             style="height:200px; object-fit:cover;">
-                    @else
-                        <div style="height:200px; background:#f1f1f1"
-                             class="d-flex align-items-center justify-content-center text-muted">
-                            No Image
-                        </div>
-                    @endif
-
-                    <div class="card-body text-center d-flex flex-column">
-
-                        <h5 class="card-title">{{ $post->title }}</h5>
-
-                        @if($post->excerpt)
-                            <p class="text-muted small">
-                                {{ $post->excerpt }}
-                            </p>
-                        @endif
-
-                        <div class="mt-auto d-flex justify-content-center gap-1">
-
-                            {{-- DETAIL (TIDAK DIUBAH) --}}
-                            <a href="{{ route('post.show', $post->id) }}"
-                               class="btn btn-sm btn-outline-primary">
-                                Detail
-                            </a>
-
-                            {{-- HAPUS (FITUR BARU, AMAN) --}}
-                            <form action="{{ route('post.destroy', $post->id) }}"
-                                  method="POST"
-                                  onsubmit="return confirm('Yakin ingin menghapus postingan ini?')">
-                                @csrf
-                                @method('DELETE')
-                                <button class="btn btn-sm btn-outline-danger">
-                                    Hapus
-                                </button>
-                            </form>
-
-                        </div>
-
+       <div class="container mt-4">
+    <div class="row">
+        @foreach($data as $imguniv)
+            <div class="col-12 mb-5">
+            <div class="card border-0 shadow-sm">
+                <div class="row g-0">
+                {{-- FOTO (Kiri) --}}
+                <div class="col-md-4">
+                    <img src="{{ asset('storage/' . $imguniv->image) }}" class="img-fluid rounded-start" alt="{{ $imguniv['nama'] }}" style="object-fit: cover; width: 100%; height: 200px;">
+                </div>
+                {{-- KONTEN (Kanan) --}}
+                <div class="col-md-8">
+                    <div class="card-body">
+                    {{-- NAMA --}}
+                    <h4 class="card-title fw-bold">{{ $imguniv['nama'] }}</h4>
+                    {{-- DESKRIPSI --}}
+                    <p class="card-text text-muted">{{ $imguniv['deskripsi'] }}</p>
+                    {{-- LINK READ MORE --}}
+                    <a href="{{ url('/post/' . $imguniv['id']) }}" class="text-decoration-none">
+                        Read More →
+                    </a>
                     </div>
                 </div>
-
+                </div>
+            </div>
             </div>
         @endforeach
+    </div>
+</div>
 
     </div>
+</div>
+    <div class="card mb-3" style="max-width: 540px;">
+  <div class="row g-0">
+
+    <!-- Deskripsi di kiri -->
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">
+          This is a wider card with supporting text below as a natural lead-in to additional content.
+          This content is a little bit longer.
+        </p>
+        <p class="card-text">
+          <small class="text-body-secondary">Last updated 3 mins ago</small>
+        </p>
+      </div>
+    </div>
+
+    <!-- Gambar di kanan -->
+    <div class="col-md-4">
+      <img src="..." class="img-fluid rounded-end" alt="...">
+    </div>
+
+  </div>
+</div>
+
+
 
     {{-- Pagination --}}
     <div class="mt-4">
-        {{ $posts->links() }}
+        {{ $data->links() }}
         <p class="small text-muted mt-2">
-            Menampilkan {{ $posts->firstItem() }}
-            hingga {{ $posts->lastItem() }}
+            Menampilkan {{ $data->firstItem() }}
+            hingga {{ $data->lastItem() }}
             dari total {{ $totalposts }} post
         </p>
     </div>

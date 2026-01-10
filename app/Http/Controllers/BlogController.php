@@ -21,10 +21,10 @@ class BlogController extends Controller
 
         }
 
-        $posts = $query->latest()->paginate(10);
-        $posts->appends(['search' => $search]);
+        $data = $query->latest()->paginate(10);
+        $data->appends(['search' => $search]);
         $totalposts = Post::count();
-        return view('menu', compact('posts', 'totalposts', 'search'));
+        return view('menu', compact('data', 'totalposts', 'search'));
     }
 
     // single kalo diklik satu2
