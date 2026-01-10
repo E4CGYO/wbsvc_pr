@@ -40,7 +40,7 @@
                 <div class="row g-0">
                 {{-- FOTO (Kiri) --}}
                 <div class="col-md-4">
-                    <img src="{{ asset('storage/' . $img->image) }}" class="img-fluid rounded-start" alt="{{ $img['nama'] }}" style="object-fit: cover; width: 100%; height: 200px;">
+                    <img src="{{ asset('images/' . $img->image) }}" class="img-fluid rounded-start" alt="{{ $img['nama'] }}" style="object-fit: cover; width: 100%; height: 200px;">
                 </div>
                 {{-- KONTEN (Kanan) --}}
                 <div class="col-md-8">

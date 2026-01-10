@@ -3,6 +3,8 @@
 @section('title', 'About')
 
 @section('content')
+
+<h1></h1>
 {{-- ini di hapus engk rojib? --}}
     {{-- <h1>saya dalah</h1>
     <p><strong>Nama:</strong> {{ $info['name'] }}</p>
