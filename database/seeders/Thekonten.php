@@ -11,13 +11,50 @@ class Thekonten extends Seeder
     {
         Post::create([
             'title' => 'UBG',
-            'content' => 'komputernya bagus banget'
+            'content' => 'komputernya bagus banget',
+            'image' => 'ubg.jpg',
         ]);
         Post::create([
             'title' => 'Unram',
             'content' => 'teknik sipilnya pro2'
         ]);
         Post::create([
+            'title' => 'UIN',
+            'content' => 'agamis banget orangnya'
+        ]);
+         Post::create([
+            'title' => 'UIN',
+            'content' => 'agamis banget orangnya'
+        ]);
+         Post::create([
+            'title' => 'UIN',
+            'content' => 'agamis banget orangnya'
+        ]);
+         Post::create([
+            'title' => 'UIN',
+            'content' => 'agamis banget orangnya'
+        ]);
+         Post::create([
+            'title' => 'UIN',
+            'content' => 'agamis banget orangnya'
+        ]);
+         Post::create([
+            'title' => 'UIN',
+            'content' => 'agamis banget orangnya'
+        ]);
+         Post::create([
+            'title' => 'UIN',
+            'content' => 'agamis banget orangnya'
+        ]);
+         Post::create([
+            'title' => 'UIN',
+            'content' => 'agamis banget orangnya'
+        ]);
+         Post::create([
+            'title' => 'UIN',
+            'content' => 'agamis banget orangnya'
+        ]);
+         Post::create([
             'title' => 'UIN',
             'content' => 'agamis banget orangnya'
         ]);
