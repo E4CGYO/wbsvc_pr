@@ -8,8 +8,8 @@
     <p><strong>{{ session('success') }}</strong></p>
 @endif
 
-<h1>My Blog</h1>
-<hr>
+
+<!-- <hr>
 
 <form action="/menu" method="GET" class="mb-3">
     <input type="text" name="search"
@@ -22,11 +22,11 @@
     @endif
 </form>
 
-<hr>
+<hr> -->
 
-<div class="container py-4">
+<div class="container-fluid py-4">
 
-    <div class="d-flex justify-content-between align-items-center mb-4">
+    <div class="d-flex justify-content-between align-items-center mb-4 mt-4" >
         <h2 class="mb-0">Menu Resep</h2>
     </div>
 
