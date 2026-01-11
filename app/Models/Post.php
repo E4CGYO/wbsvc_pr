@@ -12,6 +12,7 @@ class Post extends Model
     'content',
     'linkfile',
     'image',
+    'linkfile',
     'excerpt'
 ];
 

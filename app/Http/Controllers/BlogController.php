@@ -65,6 +65,7 @@ class BlogController extends Controller
         'linkfile' => 'required',
         'content' => 'required',
         'image' => 'nullable|image|mimes:jpg,jpeg,png',
+        'linkfile' => 'required',
         'excerpt' => 'nullable|max:255'
     ]);
 
@@ -79,6 +80,7 @@ class BlogController extends Controller
         'content' => $request->content,
         'linkfile' => $request->linkfile,
         'excerpt' => $request->excerpt,
+        'linkfile' => $request->linkfile,
         'image' => $imagePath
     ]);
 
@@ -100,6 +102,7 @@ class BlogController extends Controller
         $validated = $request->validate([
             'title' => 'required|max:255',
             'content' => 'required',
+            'linkfile' => 'required',
         ]);
 
         // Cari post dan update
@@ -107,6 +110,7 @@ class BlogController extends Controller
         $post->update([
             'title' => $request->title,
             'content' => $request->content,
+            'linkfile' => $request->linkfile,
         ]);
 
         // Redirect update berhasil
