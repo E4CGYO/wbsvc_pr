@@ -1,12 +1,10 @@
 @extends('layouts.layout2')
-
-@section('mnu', 'Blog Home')
-
+@section('title', 'Menu Resep')
 @section('content')
 
-@if (session('success'))
+<!-- @if (session('success'))
     <p><strong>{{ session('success') }}</strong></p>
-@endif
+@endif -->
 
 
 <!-- <hr>
