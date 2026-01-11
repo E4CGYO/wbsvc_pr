@@ -46,6 +46,7 @@
         .carousel-item img {
             object-fit: cover;
         }
+
     </style>
 </head>
 <body>
@@ -56,7 +57,7 @@
 
         <!-- Brand + Menu di KIRI -->
         <div class="d-flex align-items-center">
-            
+
         </div>
 
         <!-- Toggle Mobile -->
@@ -129,6 +130,58 @@
         }
     });
 </script>
+<div class="container-fluid px-0">
+  <div class="card card-full mb-3">
+    <div class="row g-0 h-100">
+      <div class="col-md-4">
+      <img src="{{ asset('images\masak4.jpg') }}"
+     class="img-fluid custom-img"
+     alt="Burger Beef">
+      </div>
+      <div class="col-md-8">
+        <div class="card-body h-100 d-flex flex-column justify-content-center">
+          <h3 class="card-title">memasak dengan cihuyy</h3>
+          <br>
+          <p class="card-text fw-medium">
+           <H5>kegiatan memasak itu menyenangkan dan mengasyikkan,<br>
+           dengan memasak kita bisa mengekspresikan kreativitas kita,<br></H5>
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid px-0 mt-0">
+  <div class="card card-full mb-3">
+    <div class="row g-0 h-100">
+
+      <!-- TEXT (KIRI) -->
+      <div class="col-md-8 order-2 order-md-1">
+        <div class="card-body h-100 d-flex flex-column justify-content-center ps-4">
+          <h2 class="card-title">buat masakan paling badahhh</h2>
+          <p class="card-text fw-bold">
+            <h5>
+              masakan gak perlu keren,<br>
+             yang penting rasanya.... beeehhhhh
+            </h5>
+          </p>
+
+        </div>
+      </div>
+
+      <!-- IMAGE (KANAN) -->
+      <div class="col-md-4 order-1 order-md-2">
+        <img src="{{ asset('images/masak2.jpg') }}"
+             class="img-fluid h-100 w-100 object-fit-cover"
+             alt="Masak">
+      </div>
+
+    </div>
+  </div>
+</div>
+
 
 </body>
 </html>
