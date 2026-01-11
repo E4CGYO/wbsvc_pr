@@ -1,44 +1,53 @@
 @extends('layouts.layout2')
 
-@section('title', 'About')
+@section('mnu', 'Blog Home')
 
 @section('content')
 
-<h1></h1>
-{{-- ini di hapus engk rojib? --}}
-    {{-- <h1>saya dalah</h1>
-    <p><strong>Nama:</strong> {{ $info['name'] }}</p>
-    <p><strong>Bio:</strong> {{ $info['bio'] }}</p>
 
-    <a href="/">← Back to Home</a> --}}
-{{-- bagian ini di hapus engk rojib --}}
-
-{{-- Bagian saya tinggal satu halaman yaitu Halam untuk booking kelas memasak. Nanti di halaman itu ada penjelasan tentang kelas memasak kita  --}}
-
-    <div class="container-fluid py-8">
-
+<div class="container-fluid py-4">
     <div class="d-flex justify-content-between align-items-center mb-4 mt-4" >
-        <h2 class="mb-0">tentang</h2>
+        <h2 class="mb-0">About Us</h2>
     </div>
 
-    <div class="container-fluid py-4" style="margin-top: 150px; margin-bottom: 50px; padding-left: 0; padding-right: 0;">
+   <div class="card text-bg-dark" style="height: 300px;">
+  <img src="images/masak1.jpg" class="card-img h-100 object-fit-cover" alt="...">
 
-        <div class="row align-items-center">
-            <div class="col-md-6">
-                <div class="card">
-                    <div class="card-body">
-                        {{-- bagian textnya yang harus di isi --}}
-                        <h5 class="card-title">masakan opa rojib dabes</h5>
-                        <h6 class="card-subtitle mb-2 text-body-secondary">siapa rasa masakn rojib langsung mana tahan</h6>
-                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                    </div>
-                </div>
-            </div>
-            {{-- bagian fotonya mukanya rojib kalok bisa --}}
-            <div class="col-md-6 text-center">
-                <img style="border-radius: 50%; height: 400px; width: 400px;" src="images/test.png" alt="disini foto">
-            </div>
-        </div>
+  <div class="card-img-overlay d-flex justify-content-center align-items-center text-center">
+    <div>
+      <h5 class="card-title">memasak bersama kami?</h5>
+      <p class="card-text">
+        dapatkan pengalaman memasak yang menyenangkan dan seru bersama kami di GDA GDI COOKING!<br>
+        kami menyediakan berbagai resep lezat dan mudah diikuti untuk semua tingkat keahlian.<br>
+        bergabunglah dengan komunitas kami dan temukan kegembiraan dalam setiap hidangan yang Anda buat!
+      </p>
     </div>
+  </div>
+</div>
 
-@endsection
+<br>
+
+<div class="row">
+  <div class="col-sm-6 mb-3 mb-sm-0">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">kelas reguler</h5>
+        <p class="card-text">pengalaman memasak yang menyenangkan untuk pemula.</p>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSdspAVtCIxKu1Yy-kAp95MvwLdW6I8nnrqHDzm7XuU76el5SQ/viewform?usp=header" class="btn btn-primary"> Daftar </a>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">kelas lanjutan</h5>
+        <p class="card-text">pengalaman memasak yang menyenangkan untuk yang sudah berpengalaman.</p>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSdspAVtCIxKu1Yy-kAp95MvwLdW6I8nnrqHDzm7XuU76el5SQ/viewform?usp=header" class="btn btn-primary"> Daftar </a>
+      </div>
+    </div>
+  </div>
+</div>
+    <div class="row">
+
+    </div>
+</div>
