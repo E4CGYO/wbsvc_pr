@@ -30,9 +30,8 @@
       background-repeat: no-repeat;
       background-position: center;
       background-attachment: fixed;
-    }
-
-
+    background: radial-gradient(circle, #ffffff, #013b4b);
+  }
 
     @media (max-width: 576px) {
       .carousel-item img {
@@ -124,11 +123,10 @@
           <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
             <!-- Content -->
             <h6 class="text-uppercase fw-bold mb-4">
-              <i class="fas fa-gem me-3"></i>Company name
+              <i class="fas fa-gem me-3"></i>GDA GDI COOKING
             </h6>
             <p>
-              Here you can use rows and columns to organize your footer content. Lorem ipsum
-              dolor sit amet, consectetur adipisicing elit.
+              memasak lebih efisien dan menyenangkan bersama GDA GDI COOKING
             </p>
           </div>
           <!-- Grid column -->
@@ -137,19 +135,22 @@
           <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
             <!-- Links -->
             <h6 class="text-uppercase fw-bold mb-4">
-              Products
+              Produk makanan
             </h6>
             <p>
-              <a href="#!" class="text-reset">Angular</a>
+              <a href="#!" class="text-reset">Modern</a>
             </p>
             <p>
-              <a href="#!" class="text-reset">React</a>
+              <a href="#!" class="text-reset">Pembuka</a>
             </p>
             <p>
-              <a href="#!" class="text-reset">Vue</a>
+              <a href="#!" class="text-reset">Penutup</a>
             </p>
             <p>
-              <a href="#!" class="text-reset">Laravel</a>
+              <a href="#!" class="text-reset">Tradisonal</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Utama</a>
             </p>
           </div>
           <!-- Grid column -->
@@ -161,16 +162,13 @@
               Useful links
             </h6>
             <p>
-              <a href="#!" class="text-reset">Pricing</a>
+              <a href="/" class="text-reset">Home</a>
             </p>
             <p>
-              <a href="#!" class="text-reset">Settings</a>
+              <a href="/menu" class="text-reset">Menu</a>
             </p>
             <p>
-              <a href="#!" class="text-reset">Orders</a>
-            </p>
-            <p>
-              <a href="#!" class="text-reset">Help</a>
+              <a href="/about" class="text-reset">About</a>
             </p>
           </div>
           <!-- Grid column -->
@@ -179,7 +177,7 @@
           <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
             <!-- Links -->
             <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
-            <p><i class="fas fa-home me-3"></i> New York, NY 10012, US</p>
+            <p><i class="fas fa-home me-3"></i> UBEGE, UBG 10012, IND</p>
             {{-- instagram --}}
             <a href="https://www.instagram.com/rojib.ansori" class="btn btn-primary" style="text-decoration: none;">
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
@@ -206,8 +204,8 @@
 
     <!-- Copyright -->
     <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
-      © 2021 Copyright:
-      <a class="text-reset fw-bold" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+      © 2025 Copyright:
+      <a class="text-reset fw-bold" href="https://mdbootstrap.com/">GDA-GDI.com</a>
     </div>
     <!-- Copyright -->
   </footer>
