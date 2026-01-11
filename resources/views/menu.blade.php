@@ -1,10 +1,12 @@
 @extends('layouts.layout2')
-@section('title', 'Menu Resep')
+
+@section('mnu', 'Blog Home')
+
 @section('content')
 
-<!-- @if (session('success'))
+@if (session('success'))
     <p><strong>{{ session('success') }}</strong></p>
-@endif -->
+@endif
 
 
 <!-- <hr>
@@ -51,7 +53,7 @@
                     {{-- DESKRIPSI --}}
                     <p class="card-text text-muted">{{ $img['content'] }}</p>
                     {{-- LINK READ MORE --}}
-                    <a href="{{ url('/post/' . $img['id']) }}" class="text-decoration-none">
+                    <a href="{{$img['linkfile'] }}" class="text-decoration-none">
                         Read More →
                     </a>
                     </div>
