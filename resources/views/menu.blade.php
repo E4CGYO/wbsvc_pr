@@ -53,7 +53,7 @@
                     <p class="card-text text-muted">{{ $img['content'] }}</p>
                     {{-- LINK READ MORE --}}
                     <a href="{{$img['linkfile'] }}" class="text-decoration-none">
-                        Read More →
+                      <button class="btn btn-primary">get recipe📃</button>
                     </a>
                     </div>
                 </div>
