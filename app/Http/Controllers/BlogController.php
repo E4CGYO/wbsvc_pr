@@ -62,6 +62,7 @@ class BlogController extends Controller
 {
     $request->validate([
         'title' => 'required',
+        'linkfile' => 'required',
         'content' => 'required',
         'image' => 'nullable|image|mimes:jpg,jpeg,png',
         'linkfile' => 'required',
@@ -77,6 +78,7 @@ class BlogController extends Controller
     Post::create([
         'title' => $request->title,
         'content' => $request->content,
+        'linkfile' => $request->linkfile,
         'excerpt' => $request->excerpt,
         'linkfile' => $request->linkfile,
         'image' => $imagePath

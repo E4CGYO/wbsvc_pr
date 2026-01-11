@@ -16,8 +16,8 @@ class Thekonten extends Seeder
             'title' => 'Burger Beef',
             'content' => 'Burger beef premium dengan daging sapi pilihan yang dimasak sempurna, disajikan dengan saus spesial buatan rumah, lettuce segar, tomat merah, keju mozzarella, dan roti brioche yang lembut. Kombinasi sempurna antara tekstur renyah dan kelembutan yang akan memanjakan lidah Anda.',
             'image' => 'modern/burger beef.jpg',
-            'linkfile' => 'https://drive.google.com/file/d/1hnF8lR0IYmNiAXkVSfri08BoK-SIJw44/view?usp=drive_link',
-            ]);
+            'linkfile' => 'https://drive.google.com/file/d/14YHHzhDBIO2wByYpjFR-DEhOAOG3sbRU/view?usp=sharing'
+        ]);
 
         // Post::create([
         //     'title' => 'Fried Chicken ala Korea',
@@ -311,6 +311,7 @@ class Thekonten extends Seeder
         //     'title' => 'soto ayam',
         //     'content' => 'Soto ayam adalah hidangan yang terkenal dengan cita rasa gurih dan aroma rempah-rempahnya. Hidangan ini terdiri dari potongan daging ayam yang ditusuk pada tusuk sate, kemudian dipanggang dengan bumbu khas Indonesia seperti kecap manis, bawang putih, bawang merah, dan cabai. Soto ayam biasanya disajikan dengan pelengkap seperti lontong, ketupat, sambal kacang, dan acar. Hidangan ini sangat populer di seluruh Indonesia dan sering dinikmati sebagai makanan utama dalam berbagai acara.',
         //     'image' => 'Utama/soto ayam.jpg',
+        //     'linkfile' => '//drive.google.com/file/d/1E7G1Uu6_TWlbFQ8RaQkSmuGPo7CCi8HU/view?usp=drive_link'
         // ]);
     //   selesai data utama
 

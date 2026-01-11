@@ -10,6 +10,7 @@ class Post extends Model
    protected $fillable = [
     'title',
     'content',
+    'linkfile',
     'image',
     'linkfile',
     'excerpt'
