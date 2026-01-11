@@ -42,7 +42,6 @@
                 <div class="col-md-4">
                     <img src="{{ asset('images/' . $img->image) }}" class="img-fluid rounded-start" alt="{{ $img['nama'] }}" style="object-fit: cover; width: 100%; height: 200px;">
                 </div>
-                C:\Users\didan\Herd\wbsvc\public\images\masak1.jpg
                 {{-- KONTEN (Kanan) --}}
                 <div class="col-md-8">
                     <div class="card-body">
@@ -51,7 +50,7 @@
                     {{-- DESKRIPSI --}}
                     <p class="card-text text-muted">{{ $img['content'] }}</p>
                     {{-- LINK READ MORE --}}
-                    <a href="{{ url('/post/' . $img['id']) }}" class="text-decoration-none">
+                    <a href="{{$img['linkfile'] }}" class="text-decoration-none"></a>
                         Read More →
                     </a>
                     </div>
